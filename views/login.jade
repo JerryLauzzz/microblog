@@ -1,0 +1,16 @@
+extend layout
+block content
+    form.form-horizontal(method='post')
+        fieldset
+            legend User Login
+            .form-group
+                label.col-sm-2.control-label(for='inputUsername')
+                    | User Name:
+                .col-sm-10
+                    input#inputUsername.form-control(type='text', placeholder='User name', name='user')
+            .form-group
+                label.col-sm-2.control-label(for='inputPassword')
+                    | Password:
+                .col-sm-10
+                    input#inputPassword.form-control(type='password', placeholder='Password', name='pwd')
+            button.btn.btn-primary.col-sm-offset-2(type='submit') Login

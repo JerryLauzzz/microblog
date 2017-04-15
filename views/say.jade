@@ -1,0 +1,7 @@
+form.well.text-center(method='post', action='/post')
+    .input-group
+        label.sr-only(for='inputPost') post content
+        input#inputPost.form-control(type='text', placeholder='Say something :)', name='post')
+        span.input-group-btn
+            button.btn.btn-success(type='submit')
+                span.glyphicon.glyphicon-comment post

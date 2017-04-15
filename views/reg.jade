@@ -1,0 +1,24 @@
+extend layout
+
+block content
+    form.form-horizontal(method='post')
+        fieldset
+            legend Register
+            .form-group
+                lable.col-sm-2.control-label(for='inputUserName')
+                    | User Name:
+                .col-sm-10
+                    input#inputUserName.form-control(type='text', placeholder='User Name', aria-describedby='help-block', name='user')
+                    span#help-block.help-block.
+                        User name is used to login and show your name
+            .form-group
+                label.col-sm-2.control-label(for='inputPassword')
+                    | Password:
+                .col-sm-10
+                    input#inputPassword.form-control(type='password', placeholder='Password', name='pwd')
+            .form-group
+                label.col-sm-2.control-label(for='inputPasswordAgain')
+                    | Password Again:
+                .col-sm-10
+                    input#inputPasswordAgain.form-control(type='password', placeholder='Password Again', name='pwda')
+            button.btn.btn-primary.col-sm-offset-2(type='submit') Register

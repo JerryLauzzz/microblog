@@ -1,0 +1,12 @@
+extends layout
+block content
+    if (!user)
+        .humbotron
+            h1 Welcome to Microblog
+            p Microblog是一个基于Node.js的微博系统。
+            p
+                a.btn.btn-primary.btn-large(href='/login') Login
+                a.btn.btn-large(href='/reg') Register Now!
+    else
+        include ./say.jade
+    include ./posts.jade
